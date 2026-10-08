@@ -1,0 +1,49 @@
+# Local credentials and machine-specific configuration
+/ai-crm/conf/app.conf
+/fileserver/conf/app.conf
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Installed dependencies (keep manifests and lockfiles)
+node_modules/
+/ai-crm/vendor/
+
+# Build and runtime artifacts
+dist/
+bin/
+.cache/
+.scratch/
+*.log
+*.pid
+logs/
+uploads/
+/fileserver/data/
+/fileserver/storage/
+/ai-crm/ai-crm
+/fileserver/fileserver
+/ai-crm-frontend/serve-dist
+
+# Local database dumps and backups; keep source SQL scripts
+backups/
+/ai-crm/ai_crm_dev.sql
+/ai-crm/ai_crm_files.sql
+*.sql.gz
+*.sql.zip
+
+# Test output
+playwright-report/
+test-results/
+coverage/
+
+# Private production audit script with fixed account credentials
+/ai-crm-frontend/scripts/multi-account-prod-audit.mjs
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp

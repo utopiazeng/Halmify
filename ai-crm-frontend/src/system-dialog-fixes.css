@@ -1,0 +1,60 @@
+.el-dialog:has(.system-dialog-form:not(.role-dialog-form):not(.el-form--label-top)) {
+  width: min(720px, 94vw) !important;
+}
+
+.el-dialog:has(.system-dialog-form.role-dialog-form) {
+  width: min(760px, 94vw) !important;
+}
+
+.el-dialog:has(.system-dialog-form.el-form--label-top) {
+  width: min(420px, 94vw) !important;
+}
+
+.system-dialog-form {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  width: 100%;
+}
+
+.system-dialog-form .el-form-item {
+  min-width: 0;
+}
+
+.system-dialog-form .el-form-item__content {
+  width: 100%;
+  min-width: 0;
+}
+
+.system-dialog-form .el-input,
+.system-dialog-form .el-input-number,
+.system-dialog-form .el-select,
+.system-dialog-form .el-tree-select,
+.system-dialog-form .el-textarea {
+  width: 100%;
+  min-width: 0;
+}
+
+.system-dialog-form .el-input__wrapper,
+.system-dialog-form .el-select__wrapper,
+.system-dialog-form .el-textarea__inner {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.system-dialog-form .el-input-number .el-input__wrapper {
+  width: 100%;
+}
+
+.system-dialog-form .el-switch {
+  min-width: 0;
+}
+
+.system-dialog-form.el-form--label-top {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 760px) {
+  .system-dialog-form {
+    grid-template-columns: 1fr;
+  }
+}

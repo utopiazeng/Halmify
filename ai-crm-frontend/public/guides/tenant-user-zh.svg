@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="企业用户引导流程图">
+  <rect width="960" height="540" fill="#f7f9fc"/>
+  <text x="64" y="68" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">企业账号工作流</text>
+  <text x="64" y="104" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">企业管理员创建账号和角色，子账号按权限使用业务模块</text>
+  <g fill="#ffffff" stroke="#d1d5db" stroke-width="2">
+    <rect x="64" y="160" width="240" height="150" rx="8"/>
+    <rect x="360" y="160" width="240" height="150" rx="8"/>
+    <rect x="656" y="160" width="240" height="150" rx="8"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="94" y="212" font-size="22" font-weight="700" fill="#111827">1. 创建子账号</text>
+    <text x="94" y="246" font-size="17" fill="#4b5563">设置密码、邮箱和状态</text>
+    <text x="390" y="212" font-size="22" font-weight="700" fill="#111827">2. 分配角色</text>
+    <text x="390" y="246" font-size="17" fill="#4b5563">预设角色或自定义权限</text>
+    <text x="686" y="212" font-size="22" font-weight="700" fill="#111827">3. 使用模块</text>
+    <text x="686" y="246" font-size="17" fill="#4b5563">菜单和接口按权限开放</text>
+  </g>
+  <g stroke="#14b8a6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M316 235h32"/>
+    <path d="M336 222l14 13-14 13"/>
+    <path d="M612 235h32"/>
+    <path d="M632 222l14 13-14 13"/>
+  </g>
+  <rect x="64" y="374" width="832" height="80" rx="8" fill="#dcfce7"/>
+  <text x="94" y="421" font-family="Arial, sans-serif" font-size="20" fill="#166534">企业管理员可查看本租户操作日志；子账号默认不可查看日志。</text>
+</svg>

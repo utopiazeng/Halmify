@@ -1,0 +1,107 @@
+# Copy to app.conf and replace every replace-me value before starting.
+# 复制为 app.conf，启动前替换全部 replace-me 占位值。
+appname = ai-crm
+httpport = 8092
+runmode = dev
+copyrequestbody = true
+
+# MySQL: TCP by default; set db_socket only when explicitly using a socket.
+# MySQL：默认通过 TCP 连接；仅使用 socket 时填写 db_socket。
+db_host = 127.0.0.1
+db_port = 3306
+db_user = ai_crm
+db_password = replace-me-db-password
+db_name = ai_crm
+db_socket =
+db_max_open_conns = 80
+db_max_idle_conns = 20
+db_conn_max_lifetime_minutes = 30
+db_conn_max_idle_time_minutes = 10
+db_run_migrations = true
+db_migration_lock_name = ai_crm_schema_migration_lock
+db_migration_lock_timeout_sec = 15
+
+# Generate separate values with: openssl rand -hex 32
+# 使用 openssl rand -hex 32 分别生成独立密钥。
+jwt_secret = replace-me-jwt-secret
+official_site_internal_token = replace-me-official-site-token
+iot_master_secret = replace-me-iot-master-secret
+iot_terminal_debug_log_enabled = false
+log_path = logs/
+
+# Optional AI/RAG integrations; fill credentials only when using these features.
+# 可选 AI/RAG 集成：使用相关功能时填写凭据及实际可用模型。
+ai_provider = deepseek
+ai_api_url = https://api.deepseek.com
+ai_api_key =
+ai_model =
+rag_api_url =
+rag_api_key =
+
+enable_https = false
+ssl_cert =
+ssl_key =
+
+# app_id and app_secret must match the file service configuration.
+# app_id 与 app_secret 必须和文件服务配置一致。
+fileserver_nodes = http://127.0.0.1:18080
+fileserver_app_id = ai-crm
+fileserver_app_secret = replace-me-shared-fileserver-secret
+fileserver_probe_interval_sec = 10
+fileserver_cache_ttl_sec = 15
+fileserver_upload_timeout_sec = 300
+# Local example requires 1 GiB free space; adjust for your deployment.
+# 本地示例要求至少 1 GiB 空闲磁盘；部署时按容量调整。
+fileserver_min_free_bytes = 1073741824
+fileserver_high_watermark_percent = 85
+fileserver_upload_max_file_bytes = 10485760
+fileserver_download_rate_window_sec = 60
+fileserver_download_user_rate_per_window = 60
+fileserver_download_ip_rate_per_window = 120
+fileserver_download_tenant_rate_per_window = 600
+fileserver_download_user_concurrency = 3
+fileserver_download_ip_concurrency = 10
+fileserver_download_tenant_concurrency = 50
+fileserver_download_concurrency_ttl_sec = 300
+fileserver_download_rate_limit_fail_open = true
+fileserver_disk_protection_enabled = true
+
+security_login_ip_rate_per_minute = 10
+security_login_user_failures = 5
+security_login_user_window_minutes = 15
+security_login_lock_minutes = 15
+auth_security_redis_prefix = auth
+security_risk_enabled = true
+security_risk_fail_open = false
+security_risk_crm_list_window_sec = 60
+security_risk_crm_list_limit = 80
+security_risk_crm_search_window_sec = 60
+security_risk_crm_search_limit = 40
+security_risk_crm_detail_window_sec = 60
+security_risk_crm_detail_limit = 120
+security_risk_export_window_sec = 86400
+security_risk_export_limit = 20
+security_risk_download_window_sec = 60
+security_risk_download_limit = 80
+security_risk_ai_write_window_sec = 300
+security_risk_ai_write_limit = 12
+security_risk_cross_module_window_sec = 120
+security_risk_cross_module_limit = 16
+security_risk_page_size_limit = 100
+security_risk_deep_page_limit = 200
+security_risk_sequential_id_window_sec = 60
+security_risk_sequential_id_limit = 20
+dev::security_login_ip_rate_per_minute = 30
+prod::security_login_ip_rate_per_minute = 10
+
+redis_host = 127.0.0.1
+redis_port = 6379
+redis_password =
+redis_db = 0
+scheduler_lock_ttl_sec = 90
+scheduler_lock_renew_sec = 30
+
+# Use the actual frontend URL; include /demo for a /demo/ deployment.
+# 填写真实前端地址；部署到 /demo/ 时需包含 /demo。
+tenant_admin_activation_base_url = http://localhost:3001
+tenant_admin_activation_ttl_hours = 24

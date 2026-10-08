@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Tenant user onboarding flow">
+  <rect width="960" height="540" fill="#f7f9fc"/>
+  <text x="64" y="68" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Tenant Account Workflow</text>
+  <text x="64" y="104" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">Tenant admins create accounts and roles; users work within assigned permissions</text>
+  <g fill="#ffffff" stroke="#d1d5db" stroke-width="2">
+    <rect x="64" y="160" width="240" height="150" rx="8"/>
+    <rect x="360" y="160" width="240" height="150" rx="8"/>
+    <rect x="656" y="160" width="240" height="150" rx="8"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="94" y="212" font-size="22" font-weight="700" fill="#111827">1. Accounts</text>
+    <text x="94" y="246" font-size="17" fill="#4b5563">Set password, email, status</text>
+    <text x="390" y="212" font-size="22" font-weight="700" fill="#111827">2. Roles</text>
+    <text x="390" y="246" font-size="17" fill="#4b5563">Preset or custom permissions</text>
+    <text x="686" y="212" font-size="22" font-weight="700" fill="#111827">3. Modules</text>
+    <text x="686" y="246" font-size="17" fill="#4b5563">Menus and APIs open by role</text>
+  </g>
+  <g stroke="#14b8a6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M316 235h32"/>
+    <path d="M336 222l14 13-14 13"/>
+    <path d="M612 235h32"/>
+    <path d="M632 222l14 13-14 13"/>
+  </g>
+  <rect x="64" y="374" width="832" height="80" rx="8" fill="#dcfce7"/>
+  <text x="94" y="421" font-family="Arial, sans-serif" font-size="20" fill="#166534">Tenant admins can view tenant logs; sub-accounts cannot view logs by default.</text>
+</svg>

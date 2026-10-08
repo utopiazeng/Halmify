@@ -1,0 +1,37 @@
+# Copy to app.conf and replace every replace-me value before starting.
+# 复制为 app.conf，启动前替换全部 replace-me 占位值。
+server_addr = 127.0.0.1:18080
+node_id = fs-1
+# Relative to the fileserver working directory; must be writable.
+# 相对于 fileserver 工作目录，服务进程必须有写入权限。
+storage_root = data
+
+db_host = 127.0.0.1
+db_port = 3306
+db_user = ai_crm
+db_password = replace-me-db-password
+db_name = ai_crm_files
+db_params = charset=utf8mb4&parseTime=True&loc=Local
+db_socket =
+db_max_open_conns = 60
+db_max_idle_conns = 20
+db_conn_max_lifetime_minutes = 30
+db_conn_max_idle_time_minutes = 10
+db_migration_lock_name = fileserver_schema_migration_lock
+db_migration_lock_wait_sec = 15
+
+redis_host = 127.0.0.1
+redis_port = 6379
+redis_password =
+redis_db = 0
+
+# Match ai-crm fileserver_app_id / fileserver_app_secret.
+# 必须与 ai-crm 的 fileserver_app_id / fileserver_app_secret 一致。
+app_id = ai-crm
+app_secret = replace-me-shared-fileserver-secret
+max_upload_bytes = 1073741824
+allowed_clock_skew_sec = 300
+nonce_ttl_sec = 300
+delete_worker_interval_sec = 3
+scheduler_lock_ttl_sec = 90
+scheduler_lock_renew_sec = 30

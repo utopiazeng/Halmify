@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="超管引导流程图">
+  <rect width="960" height="540" fill="#f7f9fc"/>
+  <text x="64" y="68" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">超管工作流</text>
+  <text x="64" y="104" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">创建企业、配置配额、查看平台操作日志</text>
+  <g fill="#ffffff" stroke="#d1d5db" stroke-width="2">
+    <rect x="64" y="172" width="210" height="130" rx="8"/>
+    <rect x="374" y="172" width="210" height="130" rx="8"/>
+    <rect x="684" y="172" width="210" height="130" rx="8"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="94" y="224" font-size="22" font-weight="700" fill="#111827">1. 企业租户</text>
+    <text x="94" y="258" font-size="17" fill="#4b5563">创建企业管理员账号</text>
+    <text x="404" y="224" font-size="22" font-weight="700" fill="#111827">2. 配额设置</text>
+    <text x="404" y="258" font-size="17" fill="#4b5563">账号数、有效期、模块</text>
+    <text x="714" y="224" font-size="22" font-weight="700" fill="#111827">3. 全局日志</text>
+    <text x="714" y="258" font-size="17" fill="#4b5563">审计平台级操作</text>
+  </g>
+  <g stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M286 237h76"/>
+    <path d="M350 224l14 13-14 13"/>
+    <path d="M596 237h76"/>
+    <path d="M660 224l14 13-14 13"/>
+  </g>
+  <rect x="64" y="380" width="830" height="74" rx="8" fill="#e0f2fe"/>
+  <text x="94" y="425" font-family="Arial, sans-serif" font-size="20" fill="#075985">超管不进入租户业务数据，只管理租户、配额和全局审计。</text>
+</svg>

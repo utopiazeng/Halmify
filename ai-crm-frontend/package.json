@@ -1,0 +1,38 @@
+{
+  "name": "ai-crm-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node_modules/node/bin/node node_modules/vite/bin/vite.js --host 0.0.0.0",
+    "build": "node_modules/node/bin/node node_modules/vite/bin/vite.js build",
+    "preview": "node_modules/node/bin/node node_modules/vite/bin/vite.js preview --host 0.0.0.0",
+    "test:unit": "node --test tests/unit/*.test.js",
+    "test:e2e": "playwright test",
+    "i18n:scan": "npm exec --package node@20 -- node scripts/check-i18n-hardcoded.js --all-src",
+    "i18n:scan:domains": "npm exec --package node@20 -- node scripts/check-i18n-hardcoded.js --domains-only",
+    "i18n:scan:ci": "npm exec --package node@20 -- node scripts/check-i18n-hardcoded.js --all-src --fail-on-hardcoded",
+    "i18n:scan:domains:ci": "npm exec --package node@20 -- node scripts/check-i18n-hardcoded.js --domains-only --fail-on-hardcoded",
+    "i18n:sync": "npm exec --package node@20 -- node scripts/sync-translate-md.js",
+    "i18n:sync:check": "npm exec --package node@20 -- node scripts/sync-translate-md.js --check",
+    "i18n:report": "npm exec --package node@20 -- node scripts/sync-translate-md.js --report",
+    "i18n:runtime": "npm exec --package node@20 -- node --experimental-specifier-resolution=node scripts/check-i18n-runtime.js --all-src",
+    "i18n:runtime:ci": "npm exec --package node@20 -- node --experimental-specifier-resolution=node scripts/check-i18n-runtime.js --all-src --fail"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@iconify/vue": "^5.0.1",
+    "@vue/compiler-sfc": "^3.5.34",
+    "axios": "^1.7.7",
+    "canvas-confetti": "^1.9.4",
+    "element-plus": "^2.14.0",
+    "vue": "^3.5.34",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@vitejs/plugin-vue": "^1.10.2",
+    "node": "^20.20.2",
+    "vite": "^2.9.18"
+  }
+}
